@@ -1317,48 +1317,6 @@
       font-weight: 500
     }
 
-    /* ---------- RSVP ---------- */
-    #rsvp {
-      background: radial-gradient(120% 100% at 50% 100%, var(--bg2), var(--bg))
-    }
-
-    .rsvp {
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 3.2rem 1.6rem;
-      text-align: center;
-      border-radius: 34px;
-      background: var(--card);
-      border: 1.5px solid var(--gold);
-      box-shadow: var(--shadow);
-      overflow: hidden
-    }
-
-    .rsvp .env {
-      width: 118px;
-      margin: 0 auto 1rem;
-      display: block;
-      animation: floaty 5s ease-in-out infinite alternate
-    }
-
-    .rsvp .corner {
-      width: clamp(90px, 20vw, 150px)
-    }
-
-    .rsvp p {
-      position: relative;
-      z-index: 2;
-      margin: 0 auto 1.6rem;
-      max-width: 480px;
-      color: var(--muted)
-    }
-
-    .rsvp .btn {
-      position: relative;
-      z-index: 2
-    }
-
     footer {
       position: relative;
       text-align: center;
@@ -2154,7 +2112,6 @@
     <a href="#venue">Venue</a>
     <a href="#reception">Reception</a>
     <!-- <a href="#reach">How to Reach</a> -->
-    <a href="#rsvp" class="cta">RSVP</a>
     <button type="button" id="theme" aria-label="Switch light or dark mode">&#9680;</button>
   </nav>
 
@@ -2201,7 +2158,6 @@
         <div><b id="cs">00</b><span>Seconds</span></div>
       </div>
       <div class="actions rise" style="--i:8">
-        <a class="btn" href="https://forms.gle/ShyvtRmmvQ5dwwmA7" target="_blank" rel="noopener">RSVP Now</a>
         <a class="btn ghost" href="#events">See the Events</a>
       </div>
     </div>
@@ -2472,7 +2428,7 @@
         </div>
 
         <!-- Uncle & Aunty -->
-        <div class="family-card reveal" style="--d:.2s">
+        <div class="family-card reveal" style="--d:.3s">
           <span class="badge">Kaku &amp; Kaki</span>
           <div class="family-shots">
             <div class="shot-circle" title="Prakash Gupta">
@@ -2491,8 +2447,9 @@
           <p class="relation">Kaku &amp; Kaki</p>
         </div>
 
+
         <!-- Didi & Jijaji -->
-        <div class="family-card reveal" style="--d:.3s">
+        <div class="family-card reveal" style="--d:.4s">
           <span class="badge">Sister &amp; Jijaji</span>
           <div class="family-shots">
             <div class="shot-circle" title="Dr. Vigya Gupta">
@@ -2509,6 +2466,22 @@
           <h3>Dr. Vigya Gupta</h3>
           <h3>&amp; Dr. Himanshu Rathi</h3>
           <p class="relation">Didi &amp; Jijaji</p>
+        </div>
+
+        <!-- Chhote Bhai -->
+        <div class="family-card reveal" style="--d:.2s">
+          <span class="badge">Chhote Bhai</span>
+          <div class="family-shots">
+            <div class="shot-circle" title="Vishwa Vareeya">
+              <div class="ph-avatar">VV</div>
+            </div>
+            <div class="shot-circle" title="Aharnish Chaitanya">
+              <div class="ph-avatar">AC</div>
+            </div>
+          </div>
+          <h3>Vishwa Vareeya</h3>
+          <h3>&amp; Aharnish Chaitanya</h3>
+          <p class="relation">Chhote Bhai</p>
         </div>
       </div>
     </div>
@@ -2796,37 +2769,6 @@
   </div>
 </section>
 -->
-
-  <!-- RSVP -->
-  <section id="rsvp">
-    <div class="wrap">
-      <div class="rsvp reveal">
-        <div class="corner tl"><svg class="art" viewBox="0 0 300 300" aria-hidden="true">
-            <use href="#cornerArt" />
-          </svg></div>
-        <div class="corner tr"><svg class="art" viewBox="0 0 300 300" aria-hidden="true">
-            <use href="#cornerArt" />
-          </svg></div>
-        <svg class="env" viewBox="0 0 120 90" aria-hidden="true">
-          <rect x="6" y="14" width="108" height="70" rx="8" style="fill:var(--card-solid);stroke:var(--gold)"
-            stroke-width="2" />
-          <path d="M8 18L60 56 112 18" fill="none" style="stroke:var(--gold)" stroke-width="2" />
-          <use href="#flower" x="44" y="34" width="32" height="32" style="color:var(--rose)" />
-        </svg>
-        <p class="eyebrow" style="position:relative;z-index:2">Kindly respond</p>
-        <h2 style="position:relative;z-index:2">Will you <span class="script">join us?</span></h2>
-        <p>Your presence will make our celebrations complete. Please let us know if you can make it by filling in the
-          RSVP form.</p>
-        <a class="btn pulse" href="https://forms.gle/ShyvtRmmvQ5dwwmA7" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M12 21s-7.5-4.6-9.6-9.2C1 8.6 2.9 5 6.3 5c2 0 3.3 1.1 4.2 2.4.3.4.9.4 1.2 0C12.6 6.1 14 5 16 5c3.4 0 5.3 3.6 3.9 6.8C19.5 16.4 12 21 12 21z" />
-          </svg>
-          RSVP Now
-        </a>
-      </div>
-    </div>
-  </section>
 
   <footer>
     <div class="corner bl"><svg class="art" viewBox="0 0 300 300" aria-hidden="true">
